@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <!-- bootstrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <div class="bubble">
+    <img class="top-bubble" src="images/bg-pattern-top.svg" alt="top bubble">
+    <img class="bottom-bubble" src="images/bg-pattern-bottom.svg" alt="bottom bubble">
+  </div>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <div class="card">
+    <img class="card-img top" src="images/bg-pattern-card.svg" alt="">
+    <img class="profile-pic" src="images/image-victor.jpg" alt="">
+    <div class="card-body row">
+      <div class="col info">
+        <h1>Victor Crest <span>26</span></h1>
+        <h4 class="city">London</h4>
+      </div>
+      <hr>
+      <div class="col-4 social-followers">
+        <h1 class="value">80K</h1>
+        <h4 class="category">Followers</h4>
+      </div>
+      <div class="col-4">
+        <h1 class="value">803K</h1>
+        <h4 class="category">Likes</h4>
+      </div>
+      <div class="col-4 social-photos">
+        <h1 class="value">1.4K</h1>
+        <h4 class="category">Photos</h4>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Arturo Veintimilla</a>.
   </div>
 </body>
+
 </html>

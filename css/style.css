@@ -1,0 +1,99 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Background Style */
+.bubble {
+  display: flex;
+}
+
+.top-bubble {
+  bottom: 50%;
+  overflow: hidden;
+  position: fixed;
+  right: 50%;
+}
+
+.bottom-bubble {
+  left: 50%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+}
+
+hr {
+  margin-bottom: 10px
+}
+
+/* Profile Card Style */
+.card {
+  border-radius: 10px;
+  border-style: none;
+  display: flex;
+  margin: 10% auto 3%;
+  padding: 0;
+  text-align: center;
+  width: 21rem;
+
+}
+
+.card-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  margin: 75px 0 10px 0;
+  padding: 0;
+}
+
+.profile-pic {
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 120px;
+  top: 85px;
+}
+
+.info{
+margin-bottom: 10px;
+}
+
+.social-followers {
+  padding-left: 50px;
+}
+
+.social-photos {
+  padding-right: 50px;
+}
+
+/* Text size */
+.value{
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+.category {
+  font-size: xx-small;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+h1{
+  font-size: large;
+  font-weight: 700;
+}
+
+.city{
+  font-size: small;
+}
+
+span, h4{
+  color: hsl(0, 0%, 59%);
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 376px) {
+body {
+    background-position: top -63vh left -30vh, bottom -63vh right -22vh;
+    }
